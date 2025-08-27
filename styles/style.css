@@ -1,0 +1,121 @@
+/* Font : Open Sens */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* font-family: "Open Sans", sans-serif; */
+
+/* Shareable Styles */
+
+:root{
+    --primary-color:rgb(21, 64, 143);
+    --secondary-color:rgb(216, 166, 0);
+    --font-color:#3A3A3A;
+    --content-width:1180px;
+
+}
+.primaryButton{
+    background-color: #E02C6D;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    color: #ffffff;
+}
+
+*{
+    font-family: sans-serif;
+}
+
+/* Header Styles */
+.head-wrapper, .main-wrapper{
+    width: var(--content-width);
+    
+}
+.head-wrapper{    
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--font-color);
+    margin-bottom: 50px;
+}
+.headTitle{
+    font-size: 24px;
+}
+.menuBar{
+    display: flex;
+    gap: 10px;
+    width: 463px;
+    justify-content: space-between;
+}
+.menuBar li{
+    list-style: none;
+}
+.menuBar li a{
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 16px;
+}
+
+/* Body Styles */
+
+.main-wrapper{
+    margin: 0 auto;
+
+}
+.bannerPart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    margin-bottom: 50px;
+    
+    
+}
+.banner-content{
+    width: 550px;    
+}
+.banner-title{
+    font-size: 52px;
+    color: var(--font-color);
+}
+.bannerDescription{
+    font-size: 16px;
+
+}
+.banner-images{
+    width: 475px;   
+    height: 475px;
+    background-image: url("../images/CircleDesign.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.banner-images img{
+    width: 100%;
+}
+
+.sponsorSection{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width:980px;
+    margin: 0 auto;
+}
+
+/* Demo */
+
+.logo-container {
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    
+    
+  /* padding: 20px; */
+}
+
+.logo-container img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: #fff;
+  margin-left: 10px;
+}
